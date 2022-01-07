@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background: url(./image/bg01.jpg) fixed no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slide 20s infinite;
+}
+
+.container{
+    height: 90vh;
+    width: 30vw;
+    /* border: 2px solid black; */
+    /* background-color: #ffffff; */
+    backdrop-filter: blur(10px);
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.container:hover{
+    box-shadow: 12px 12px 35px 5px #024a7a80;
+    backdrop-filter: blur(35px);
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1{
+    font-size: 56px;
+    color: #083e49;
+    position: relative;
+    top: 25px;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.credentials{
+    position: relative;
+    top: 90px;
+    left: 1vw;
+    width: 28vw;
+    color: #083e49;
+}
+
+.credentials i{
+    margin-right: 8px;
+}
+
+.credentials h3{
+    margin-top: 10px;
+}
+
+.credentials input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #0b1a2e;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 28vw;
+    border-bottom: 2px solid rgba(247, 238, 238, 0.4);
+}
+
+input:focus{
+    border: none;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+button{
+    width: 130px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    border-radius: 15px;
+    border-bottom: 2px solid #caf0f8;
+    border-top: 2px solid #caf0f8;
+    transition: .5s;
+}
+
+button:hover{
+    letter-spacing: 5px;
+}
+
+p a{
+    text-decoration: none;
+    color: #caf0f8;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+p a:hover{
+    text-decoration: underline;
+    letter-spacing: 4px;
+}
+
+h5{
+    text-align: center;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes slide {
+    0%{
+        background: url(./image/bg01.jpg) fixed no-repeat;
+        background-size: cover;
+    }
+    20%{
+        background: url(./image/bg02.jpg);
+        background-size: cover;
+    }
+    40%{
+        background: url(./image/bg03.jpg);
+        background-size: cover;
+    }
+    60%{
+        background: url(./image/bg04.jpg);
+        background-size: cover;
+    }
+    80%{
+        background: url(./image/bg05.jpg);
+        background-size: cover;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./image/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- CDN for Fontawesome -->
+    <script src="https://kit.fontawesome.com/2feefe8604.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Sign Up</h1>
+        </div>
+        <div class="credentials">
+            <form>
+                <h3><i class="far fa-user"></i>Username</h3>
+                <input type="text" placeholder="Enter Username">
+                <h3><i class="fas fa-unlock-alt"></i>Enter Password</h3>
+                <input type="Password" placeholder="Enter Password" id="signPass">
+                <h5 class="show" id="Sshow">Show Password</h5>
+                <h5 class="show hide" id="ShideP">Hide Password</h5>
+                <h3><i class="fas fa-unlock-alt"></i>Confirm Password</h3>
+                <input type="Password" placeholder="Confirm Password" id="signPassAgn">
+                <h5 class="show" id="SshowAgn">Show Password</h5>
+                <h5 class="show hide" id="ShidePAgn">Hide Password</h5>
+            </form>
+        </div>
+        <div class="footer">
+            <button id="signUp">Sign Up</button>
+            <p>Already have an account? <span><a href="./index.html">Login</a></span></p>
+        </div>
+    </div>
+
+    <script src="./signScript.js"></script>
+</body>
+
+</html>
